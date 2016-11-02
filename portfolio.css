@@ -1,0 +1,276 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+h2, h3{
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	/*color: #888;*/
+}
+header section footer hgroup nav article aside {
+	display: block;
+}
+body{
+	background: #F1F1F1;
+	font-family: helvetica, Arial;
+	font-size: 20px;	
+}
+/*a{
+	color: #722872;
+}*/
+/*a:hover a:focus{
+	color: #592059;
+}*/
+ /*romoving #banner .container here*/
+  main #about, #portfolio, #contact div, footer #footer_up{
+	display: flex;
+	align-items: flex-start;	
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin: 0 auto;
+} 
+#banner .container-fluid{
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1000px;	
+}
+#banner{     	
+    background-color: #14B97D;    
+    padding: 10px;
+    background-image: none ;
+}
+nav{
+	font-size: 18px;
+}
+.nav li{
+	/*display: inline-flex;*/
+	/*font-weight: bold;*/
+	/*height: 100%;*/
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a .active{
+	color: #fff;
+}
+/*nav li a{
+	color: #fff;
+	padding: 15px;
+}*/
+.navbar-default .navbar-brand{
+	background: #fff;
+	border-radius: 3px
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+	background: #fff;
+}
+/*nav ul li a:hover{
+	background-color: #fff;
+	color: #722872;
+	box-shadow: 0 2px 2px rgb(0, 0, 0);
+}*/
+main > *{
+	max-width: 1000px;
+	box-shadow: 0 0 2px rgb(0, 0, 0);
+	margin: 0 auto;
+}
+main #about{
+	padding: 80px 20px 40px;
+	/*color: #EEE; */   
+	/*background: #aaa scroll 0 0;*/
+	text-align: right;  
+	margin: 70px auto 0;
+    align-items: flex-end;  
+    background-image: url('http://res.cloudinary.com/prashanthrada/image/upload/v1475858032/coffee_hhgzja.jpg'); 
+    background-size: cover;
+    opacity: 0.8;
+    color: #000; 
+}
+main #about img{
+	border-radius: 50%;
+	height: auto;
+	margin: 30px 0 10px 20px;
+	max-width: 80%;
+	width: 250px;
+}
+main #about .text-left{
+	max-width: 600px;
+	text-align: right;
+	margin-bottom: 30px;
+}
+main #Portfolio, #contact{	
+	padding: 55px 0;
+}
+main #Portfolio{
+	background: #d1bdbc;
+}
+figure{
+	margin: 0 auto;
+}
+.works{
+	position: relative;
+	width: 330px;
+	height: 340px;
+	border: 5px solid #ead7d6;
+	display: block;
+	/*padding: 5px;*/
+	margin-bottom: 25px;
+	/*line-height: 1.42;*/
+	/*background: #fff;*/
+	border-radius: 5px;
+}
+.works .subtitle{
+	position: absolute;
+	color: #fff;
+	padding: 9px;
+	opacity: 0;	
+	font-size: 30px;
+	font-weight: bold;	
+	bottom: 0;
+	/*left: 0;
+	width: 100%;*/
+	height: 100%;
+	text-align: center;
+	z-index: 3;	
+}
+.works a > img {
+	height: 100%;
+	max-width: 100%;
+}
+.works a:hover .subtitle,
+.works:hover .subtitle,.works a:focus .subtitle,
+.works:focus .subtitle {
+    display: block;
+    opacity: 0.9;
+    background: #000;    
+}
+/*.grow:hover,
+.grow:focus {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+} //to grow the size on hover removed grow class from all divs*/
+main #contact{
+	background-image: url('http://res.cloudinary.com/prashanthrada/image/upload/v1475858032/computers_f7mp4x.jpg');
+	background-size: cover;
+	color: #fff;
+}
+main #about hr{
+	margin-left: 100px;
+}
+.hrLight, .hrDark{
+	margin: 30px auto;
+	max-width: 500px;
+	border-top: solid 5px;
+	color: #888;
+}
+main #contact > div{
+	margin: 0 auto;	
+}
+main #contact > div > div {
+    width: 300px;
+}
+main #contact > div > div p {
+    margin: 60px auto 0 0;
+    max-width: 700px;
+}
+@media (min-width: 1023px){
+main #contact > div > div {
+	max-width: 40%;
+}
+main #contact > div > div p{
+	margin-top: 40px;
+}
+main #contact > div > div p:last-child{
+	margin-top: 360px;
+}
+}
+form{
+	width: 40%;
+	margin-left: 20px;
+}
+footer{
+	background-color: #aaa;
+	color: #fff;
+	text-align: center;
+}
+footer #footer_up{
+	padding-top: 40px;
+	width: 80%;
+}
+footer #footer_down{
+	background: #14B97D;
+	padding: 25px 0;
+	text-align: center;
+}
+footer #footer_up div{
+	margin-bottom: 40px;
+	width: 240px;
+}
+footer h3{
+	color: #fff;
+	margin-bottom: 25px;
+}
+#footer_up ul{
+	padding: 0px;
+}
+#footer_up li{
+	display: inline;
+}
+.media{		
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	line-height: 48px;
+	text-align: center;
+}
+.media:hover{
+	background: #fff;
+	color: #722872;
+	border: solid 2px #fff;
+}
+.formValid{
+	position: relative;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #bbb;
+}
+.formValid input, .formValid textarea {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: none !important;
+    font-size: 1.5em;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    resize: none;
+    width: 100%;
+    z-index: 1;
+}
+.formValid input:focus, .formValid textarea:focus {
+    outline: 0 none;
+}
+.formValid label {
+    display: block;
+    font-size: 0.85em;
+    line-height: 1.76471em;
+    margin: 0;
+    opacity: 0;
+    position: relative;
+    top: 2em;
+    transition: top 0.3s ease 0s, opacity 0.3s ease 0s;
+    vertical-align: baseline;
+    z-index: 0;
+}
+.formValid-filled label {
+    color: #aaa;
+    opacity: 1;
+    top: 0;
+}
+.formValid-focused label {
+    color: #722872;
+}
